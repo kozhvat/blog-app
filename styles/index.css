@@ -1,0 +1,159 @@
+h1,
+h2,
+h3,
+p,
+a,
+button,
+div,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  line-height: 39px;
+  background: none;
+  border: none;
+}
+
+input,
+textarea {
+  padding: 10px 20px;
+  border: 1px solid #000000;
+}
+
+.container {
+  margin: auto;
+  padding: 0 15px;
+}
+
+.main-header,
+.blog,
+.blog__posts-feed,
+.blog__posts-list,
+.blog__input-new-post-description {
+  display: flex;
+}
+
+.main-header {
+  padding-top: 20px;
+  justify-content: center;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.blog {
+  margin-top: 45px;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  row-gap: 50px;
+}
+
+.blog__make-post,
+.blog__posts-feed,
+.blog__input-new-post-header,
+.blog__input-new-post-description {
+  max-width: 500px;
+  width: 100%;
+}
+
+.blog__input-new-post-header,
+.blog__input-new-post-description,
+.blog__button-publish {
+  margin-bottom: 30px;
+}
+
+.blog__input-new-post-description,
+.blog__input-new-post-header:focus-visible,
+.blog__input-new-post-description:focus-visible {
+  outline: none;
+}
+
+.blog__input-new-post-header,
+.blog__button-publish {
+  height: 60px;
+}
+
+.blog__input-new-post-description {
+  min-height: 250px;
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.blog__input-new-post-header::placeholder,
+.blog__input-new-post-description::placeholder,
+.blog__empty-feed {
+  color: #979797;
+}
+
+.blog__input-new-post-description::placeholder {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.blog__creation-post-header,
+.blog__feed-header {
+  margin-bottom: 60px;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.blog__creation-post-header,
+.blog__feed-header,
+.blog__post-header {
+  font-weight: 700;
+}
+
+.blog__button-publish {
+  width: 100%;
+  color: #ffffff;
+  background: #0094ff;
+  cursor: pointer;
+}
+
+.blog__header-more-100,
+.blog__description-more-200 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #ff0000;
+  visibility: hidden;
+}
+
+.blog__header-more-100_visible,
+.blog__description-more-200_visible {
+  visibility: visible;
+}
+
+.blog__posts-feed {
+  flex-direction: column;
+}
+
+.blog__posts-list {
+  flex-direction: column-reverse;
+}
+
+.blog__post-item {
+  margin-bottom: 50px;
+}
+.blog__post-date {
+  color: #0094ff;
+}
+
+.blog__post-date,
+.blog__post-description {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.blog__post-date,
+.blog__post-header {
+  margin-bottom: 15px;
+}

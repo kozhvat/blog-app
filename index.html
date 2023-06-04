@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="url(./resources/img/icon.png)" />
+    <link rel="icon" type="image/png" href="./resources/img/icon.png" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Мой блог</title>
+  </head>
+  <body>
+    <h1 class="main-header container">Мой блог</h1>
+    <section class="blog container">
+      <div class="blog__make-post">
+        <h2 class="blog__creation-post-header">Новый пост</h2>
+        <input
+          data-find="input-new-post-header"
+          class="blog__input-new-post-header"
+          type="text"
+          placeholder="Заголовок"
+        />
+        <textarea
+          data-find="input-new-post-description"
+          class="blog__input-new-post-description"
+          placeholder="Напиши пост"
+          required
+        ></textarea>
+        <button
+          data-find="button-publush"
+          class="blog__button-publish"
+          type="submit"
+        >
+          Опубликовать
+        </button>
+        <div class="blog__header-more-100 blog__header-more-100_visible">
+          Заголовок больше 100 символов
+        </div>
+        <div
+          class="blog__description-more-200 blog__description-more-200_visible"
+        >
+          Пост больше 200 символов
+        </div>
+      </div>
+      <div class="blog__posts-feed">
+        <h2 class="blog__feed-header">Лента</h2>
+        <ul class="blog__posts-list">
+          <span class="blog__empty-feed">Тут пока пусто...</span>
+          <li class="blog__post-item">
+            <div class="blog__post-date">Дата поста</div>
+            <h3 class="blog__post-header">Заголовок поста</h3>
+            <p class="blog__post-description">Текст поста</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="./scripts/index.js"></script>
+    <!-- <script src="./scripts/index_copy.js"></script> -->
+  </body>
+</html>
